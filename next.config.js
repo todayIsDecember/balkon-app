@@ -10,9 +10,13 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "http",
-        hostname: "localhost:3001",
+        hostname: "localhost",
       },
     ],
+  },
+  i18n: {
+    locales: ["uk"],
+    defaultLocale: "uk",
   },
   webpack(config) {
     config.module.rules.push({
