@@ -1,11 +1,16 @@
-import { ProductProps } from "./Product.props";
-import styles from './Product.module.css'
+'use client'
+
+import { ProductPageProps } from "./ProductPage.props";
+import styles from './ProductPage.module.css'
 import cn from 'classnames'
 import Image from 'next/image'
 import PriceIcon from '../../../public/price.svg'
 import WeightIcon from '../../../public/weight.svg'
+import { Button } from "../button/Button";
+import {useRouter} from 'next/navigation'
 
-export const Product = ({product, className, ...props}: ProductProps) => {
+export const ProductPage = ({product, className, ...props}: ProductPageProps) => {
+  const router = useRouter()
 
   return (
     <div
@@ -26,6 +31,7 @@ export const Product = ({product, className, ...props}: ProductProps) => {
       <div className={styles.price}>{product.product_price} грн</div>
       <WeightIcon className={styles.weightIcon}/>
       <div className={styles.weight}>{product.product_weight} г</div>
+      <Button appiarence="btn_main" className={styles.backBtn} onClick={(e) => {router.back()}}>Повернутись до меню</Button>
     </div>
   )
 }

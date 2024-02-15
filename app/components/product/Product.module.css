@@ -15,12 +15,7 @@
   align-items: center;
   background-color: #ffffff67;
   transition: 0.3s ease;
-}
-
-.active {
-  background-color: #fff;
-  transform: scale(1.15);
-  box-shadow: 0px 0px 40px 30px #3a3a3a;
+  color: #000;
 }
 
 .title {

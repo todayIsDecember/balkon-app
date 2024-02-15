@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import { Raiting } from "../components"
 
 export const metadata: Metadata = {
   title: 'Balkon IF -> Reviews'
@@ -6,6 +7,8 @@ export const metadata: Metadata = {
 
 export default function Reviews() {
   return (
-    <div>reviews</div>
+    <div>
+      <Raiting rating={4}/>
+    </div>
   )
 }

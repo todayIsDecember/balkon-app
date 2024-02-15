@@ -10,6 +10,7 @@ export const Button = ({children, appiarence, className, ...props}: ButtonProps)
         [styles.category]: appiarence == 'category',
         [styles.back]: appiarence == 'back'
       })}
+      {...props}
     >{children}</button>
   )
 }
