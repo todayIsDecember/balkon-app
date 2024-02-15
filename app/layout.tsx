@@ -4,6 +4,7 @@ import {raleway} from './ui/fonts'
 import styles from './page.module.css'
 import Image from 'next/image'
 import LogoIcon from '../public/logo.svg'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: "Balkon IF",
@@ -23,7 +24,9 @@ export default function RootLayout({
       <body className={raleway.className}>
       <Image src='/images/26.jpg' alt="fone" fill className={styles.backgroundPhoto} priority/>
         <div className={styles.container}>
-          <LogoIcon className={styles.logo}/>
+          <Link className={styles.logo} href='/'>
+            <LogoIcon/>
+          </Link>
           {children}
         </div>
       </body>

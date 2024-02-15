@@ -2,5 +2,5 @@ import { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react";
 
 export interface ButtonProps extends DetailedHTMLProps<HTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
   children: ReactNode,
-  appiarence: 'btn_main' | 'category'
+  appiarence: 'btn_main' | 'category' | 'back'
 }

@@ -7,7 +7,8 @@ export const Button = ({children, appiarence, className, ...props}: ButtonProps)
     <button
       className={cn(className, styles.button, {
         [styles.btn_main]: appiarence == 'btn_main',
-        [styles.category]: appiarence == 'category'
+        [styles.category]: appiarence == 'category',
+        [styles.back]: appiarence == 'back'
       })}
     >{children}</button>
   )
