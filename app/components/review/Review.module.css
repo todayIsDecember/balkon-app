@@ -1,0 +1,50 @@
+.review {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+  ". created"
+  "food foodRaiting"
+  "service serviceRaiting"
+  "atmosphere atmosthereRaiting"
+  "text text";
+  gap: 10px;
+  box-shadow: 0px 0px 10px black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  backdrop-filter: brightness(15%);
+  color: #dadada;
+  letter-spacing: 0.1em;
+}
+
+
+.created {
+  grid-area: created;
+  text-align: end;
+}
+
+.food {
+  grid-area: food;
+}
+.service {
+  grid-area: service;
+}
+.atmosphere {
+  grid-area: atmosphere;
+}
+.text {
+  grid-area: text;
+  font-size: 12px;
+}
+
+.foodRaiting {
+  grid-area: foodRaiting;
+}
+
+.serviceRaiting {
+  grid-area: serviceRaiting;
+}
+
+.atmosthereRaiting {
+  grid-area: atmosthereRaiting;
+}
