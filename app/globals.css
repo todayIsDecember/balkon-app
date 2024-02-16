@@ -4,3 +4,9 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --primary: #1864d6ad;
+  --red: rgb(212, 119, 119);
+  --good: rgb(111, 216, 111);
+}

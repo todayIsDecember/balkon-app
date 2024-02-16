@@ -1,6 +1,6 @@
-import {Raleway } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 
-export const raleway = Raleway({
-  weight: ['100', '300', '500'],
-  subsets: ['cyrillic', 'latin']
+export const open_Sans = Open_Sans({
+  weight: ['300', '500'],
+  subsets: ['cyrillic']
 })

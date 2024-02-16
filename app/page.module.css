@@ -1,13 +1,13 @@
 .main {
   display: grid;
   height: 100%;
-  align-content: center;
-  gap: 100px;
+  align-content: start;
+  gap: 50px;
 }
 
 .backgroundPhoto {
   object-fit: cover;
-  filter: blur(2px);
+  /* filter: blur(2px); */
   object-position: center;
 }
 
@@ -25,14 +25,15 @@
   position: relative;
   inset: 0px;
   height: 100dvh;
-  background: rgb(0 0 0 / 30%);
+  background: rgb(0 0 0 / 50%);
   display: grid;
   grid-template-rows: 250px auto;
   overflow: scroll;
 }
 
 .btn {
-  width: 100%;
+  justify-self: center;
+  width: 70%;
 }
 
 @keyframes showLogo {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {raleway} from './ui/fonts'
+import {open_Sans} from './ui/fonts'
 import styles from './page.module.css'
 import Image from 'next/image'
 import LogoIcon from '../public/logo.svg'
@@ -21,7 +21,7 @@ export default function RootLayout({
         <meta charSet="UTF-8"/>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
       </head>
-      <body className={raleway.className}>
+      <body className={open_Sans.className}>
       <Image src='/images/26.jpg' alt="fone" fill className={styles.backgroundPhoto} priority/>
         <div className={styles.container}>
           <Link className={styles.logo} href='/'>

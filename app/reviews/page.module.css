@@ -18,13 +18,19 @@
 .reviewsContainer {
   border-top: 1px solid black;
   display: grid;
-  gap: 20px;
+  gap: 25px;
 }
 
 .title {
   margin-top: 10px;
-  justify-self: end;
   font-size: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.avg {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 @keyframes swipeToTop {

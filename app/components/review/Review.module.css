@@ -2,49 +2,39 @@
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas:
-  ". created"
-  "food foodRaiting"
-  "service serviceRaiting"
-  "atmosphere atmosthereRaiting"
-  "text text";
+  "title created"
+  "raiting ."
+  "description description";
   gap: 10px;
-  box-shadow: 0px 0px 10px black;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 13px;
   font-size: 10px;
-  backdrop-filter: brightness(15%);
-  color: #dadada;
+  color: #3d3d3d;
   letter-spacing: 0.1em;
+  box-shadow: 7px 5px 17px #a19e9e;
+  background-color: rgb(248, 245, 245);
+
 }
 
 
 .created {
   grid-area: created;
   text-align: end;
+  justify-self: flex-start;
+  color: #7c7b7b;
 }
-
-.food {
-  grid-area: food;
-}
-.service {
-  grid-area: service;
-}
-.atmosphere {
-  grid-area: atmosphere;
-}
-.text {
-  grid-area: text;
+.title {
+  grid-area: title;
   font-size: 12px;
+  color: black;
 }
 
-.foodRaiting {
-  grid-area: foodRaiting;
+.raiting {
+  grid-area: raiting;
 }
 
-.serviceRaiting {
-  grid-area: serviceRaiting;
-}
-
-.atmosthereRaiting {
-  grid-area: atmosthereRaiting;
+.description {
+  grid-area: description;
+  font-size: 10px;
+  color: #3d3d3d;
 }

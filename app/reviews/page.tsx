@@ -14,7 +14,10 @@ export default async function Reviews() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.reviewsContainer}>
-        <div className={styles.title}>Кількість відгуків: {reviewsData.count}</div>
+        <div className={styles.title}>
+        <div className={styles.avg}>{reviewsData['avg']['_avg']['raiting'].toFixed(1)} із 5</div>
+        <div className={styles.count}>Всього відгуків: {reviewsData.count}</div>
+        </div>
         {reviewsData.reviews.map((r: IReview) => <Review key={r.review_id} review={r}/>)}
       </div>
     </div>
