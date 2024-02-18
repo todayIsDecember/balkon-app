@@ -6,7 +6,9 @@ body {
 }
 
 :root {
-  --primary: #1864d6ad;
-  --red: rgb(212, 119, 119);
-  --good: rgb(111, 216, 111);
+  --black: #212529;
+  --black-light: #343a40;
+  --grey: #adb5bd;
+  --white: #f8f9fa;
+  --grey-light: #dee2e6;
 }

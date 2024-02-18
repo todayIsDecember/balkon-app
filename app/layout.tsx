@@ -22,10 +22,10 @@ export default function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
       </head>
       <body className={open_Sans.className}>
-      <Image src='/images/26.jpg' alt="fone" fill className={styles.backgroundPhoto} priority/>
+      <Image src='/images/bg.jpg' alt="fone" fill className={styles.backgroundPhoto} priority/>
         <div className={styles.container}>
           <Link className={styles.logo} href='/'>
-            <LogoIcon/>
+            <LogoIcon className={styles.logoIcon}/>
           </Link>
           {children}
         </div>

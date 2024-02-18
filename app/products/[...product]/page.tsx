@@ -1,11 +1,11 @@
 import { getProduct } from "@/app/api/getProduct"
-import { ProductPage } from "@/app/components"
+import { ProductPage, Wrapper } from "@/app/components"
 
 export default async function Product({params}: {params: {product: number}}) {
   const product = await getProduct(params.product)
   return (
-    <div>
+    <Wrapper>
       <ProductPage product={product}/>
-    </div>
+    </Wrapper>
   )
 }

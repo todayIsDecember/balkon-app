@@ -9,22 +9,21 @@
 }
 
 .btn_main {
-  font-size: 30px;
-  color: rgba(255, 255, 255);
-  background: var(--primary);
+  font-size: 18px;
+  color: var(--grey-light);
+  background: var(--black);
   box-shadow: 0px 8px 20px 0px black;
   width: 100%;
-  color: #fff;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .category {
   padding: 0;
   position: relative;
   font-size: 30px;
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 0px 10px white;
-  box-shadow: 5px 6px 18px grey;
+  color: var(--white);
+  text-shadow: 2px 2px 10px var(--black);
+  font-weight: blod;
   height: 100%;
 }
 

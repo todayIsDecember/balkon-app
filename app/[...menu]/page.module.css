@@ -1,22 +1,8 @@
-.wrapper {
-  position: relative;
-  background-color: rgb(240, 238, 238);
-  backdrop-filter: blur(10px);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  top: 0;
-  animation-name: swipeToTop;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  margin-left: 20px;
-  margin-right: 20px;
-}
 .menuSection, .productSection {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
   gap: 30px;
-  padding: 20px;
 }
 
 .menuSection {
@@ -25,11 +11,12 @@
 
 .menuTitle {
   text-align: center;
-  font-size: 25px;
+  font-size: 28px;
   text-transform: capitalize;
+  font-weight: bold;
   letter-spacing: 0.2em;
   padding: 0px 40px;
-  color: var(--primary);
+  color: var(--grey);
 }
 .category {
   position: relative;
@@ -44,17 +31,8 @@
   border-radius: 25px;
 }
 
-@keyframes swipeToTop {
-  from {
-    top: 300px;
-  }
-  to {
-    top: 0px;
-  }
-}
-
 .back {
-  position: fixed;
+  position:fixed;
   top: 15px;
   left: 15px;
   border-radius: 10px;

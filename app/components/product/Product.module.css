@@ -10,12 +10,11 @@
   justify-content: center;
   gap:10px;
   padding: 10px;
-  box-shadow: 10px 10px 18px 0px rgb(58, 58, 58);
   border-radius: 15px;
   align-items: center;
-  background-color: #ffffff67;
+  background-color: var(--black-light);
   transition: 0.3s ease;
-  color: #000;
+  color: var(--grey);
 }
 
 .title {
@@ -32,6 +31,7 @@
 
 .priceIcon {
   grid-area: priceIcon;
+  fill: var(--grey);
 }
 
 .price {
@@ -41,6 +41,7 @@
 
 .weightIcon {
   grid-area: weightIcon;
+  fill: var(--grey);
 }
 
 .weight {

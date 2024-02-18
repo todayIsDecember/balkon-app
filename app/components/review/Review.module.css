@@ -9,10 +9,9 @@
   padding: 10px;
   border-radius: 13px;
   font-size: 10px;
-  color: #3d3d3d;
+  color: var(--grey);
   letter-spacing: 0.1em;
-  box-shadow: 7px 5px 17px #a19e9e;
-  background-color: rgb(248, 245, 245);
+  background-color: var(--black-light);
 
 }
 
@@ -21,12 +20,11 @@
   grid-area: created;
   text-align: end;
   justify-self: flex-start;
-  color: #7c7b7b;
 }
 .title {
   grid-area: title;
   font-size: 12px;
-  color: black;
+  color: var(--grey-light);
 }
 
 .raiting {
@@ -36,5 +34,5 @@
 .description {
   grid-area: description;
   font-size: 10px;
-  color: #3d3d3d;
+  color: var(--grey-light);
 }

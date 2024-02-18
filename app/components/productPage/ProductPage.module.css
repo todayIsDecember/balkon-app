@@ -9,20 +9,15 @@
   "back back back back back"
   ;
   justify-content: center;
-  grid-template-rows: 50% repeat(4, auto);
-  height: 90%;
+  grid-template-rows: 50% auto 1fr auto auto;
+  height: 100%;
   gap:20px 10px;
-  padding: 20px;
-  box-shadow: 10px 10px 18px 0px rgb(58, 58, 58);
   border-radius: 15px;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--black);
   transition: 0.3s ease;
-  color: #000;
+  color: var(--grey);
   margin-top: 300px;
-  animation-name: showProduct;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
   margin: 0px 10px;
 }
 
@@ -39,7 +34,7 @@
   font-size: 18px;
   border-bottom: 1px dashed var(--primary);
   padding-bottom: 20px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .priceIcon {
@@ -53,6 +48,7 @@
 
 .weightIcon {
   grid-area: weightIcon;
+  fill: var(--grey);
 }
 
 .weight {
@@ -76,13 +72,6 @@
   font-size: 12px;
   padding: 15px;
   border-radius: 10px;
-}
-
-@keyframes showProduct {
-  from {
-    margin-top: 300px;
-  }
-  to {
-    margin-top: 0px;
-  }
+  background-color: var(--black-light);
+  box-shadow: none;
 }

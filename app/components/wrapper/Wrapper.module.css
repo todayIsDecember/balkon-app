@@ -1,0 +1,23 @@
+.wrapper {
+  position: relative;
+  background-color: var(--black);
+  backdrop-filter: blur(10px);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  top: 0;
+  animation-name: swipeToTop;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 20px;
+}
+
+@keyframes swipeToTop {
+  from {
+    top: 300px;
+  }
+  to {
+    top: 0px;
+  }
+}

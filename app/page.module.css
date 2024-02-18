@@ -1,8 +1,10 @@
 .main {
+  position: relative;
   display: grid;
   height: 100%;
-  align-content: start;
-  gap: 50px;
+  align-content: center;
+  gap: 30px;
+  overflow: hidden;
 }
 
 .backgroundPhoto {
@@ -25,7 +27,7 @@
   position: relative;
   inset: 0px;
   height: 100dvh;
-  background: rgb(0 0 0 / 50%);
+  background: rgb(0 0 0 / 40%);
   display: grid;
   grid-template-rows: 250px auto;
   overflow: scroll;
@@ -33,7 +35,39 @@
 
 .btn {
   justify-self: center;
-  width: 70%;
+  width: 60%;
+}
+
+.btn1 {
+  margin-left: 300px;
+  animation-name: showButton1;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.btn2 {
+  margin-left: 400px;
+  animation-name: showButton2;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.btn3 {
+  margin-left: 500px;
+  animation-name: showButton3;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.btn4 {
+  margin-left: 600px;
+  animation-name: showButton4;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
 
 @keyframes showLogo {
@@ -42,5 +76,41 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes showButton1 {
+  from {
+    margin-left: 300px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+@keyframes showButton2 {
+  from {
+    margin-left: 400px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+@keyframes showButton3 {
+  from {
+    margin-left: 500px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+@keyframes showButton4 {
+  from {
+    margin-left: 600px;
+  }
+  to {
+    margin-left: 0px;
   }
 }

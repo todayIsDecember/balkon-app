@@ -1,22 +1,7 @@
-.wrapper {
-  position: relative;
-  background-color: rgb(240, 238, 238);
-  backdrop-filter: blur(10px);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  top: 0;
-  animation-name: swipeToTop;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 20px;
-}
-
 
 
 .reviewsContainer {
-  border-top: 1px solid black;
+  border-top: 1px solid var(--grey);
   display: grid;
   gap: 25px;
 }
@@ -26,18 +11,10 @@
   font-size: 10px;
   display: grid;
   grid-template-columns: 1fr auto;
+  color: var(--grey);
 }
 
 .avg {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-}
-
-@keyframes swipeToTop {
-  from {
-    top: 300px;
-  }
-  to {
-    top: 0px;
-  }
 }

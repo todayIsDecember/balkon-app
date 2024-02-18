@@ -1,0 +1,12 @@
+.container {
+  color: var(--grey);
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.location {
+  font-size: 12px;
+}
