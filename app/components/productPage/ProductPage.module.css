@@ -10,7 +10,6 @@
   ;
   justify-content: center;
   grid-template-rows: 50% auto 1fr auto auto;
-  height: 100%;
   gap:20px 10px;
   border-radius: 15px;
   align-items: center;
