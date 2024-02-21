@@ -17,11 +17,11 @@ export const Raiting = ({isEditable = false, rating, setRating, ...props}: Ratin
     const updatedArray = raitingArray.map((r: JSX.Element, i: number) => {
       return (
         <StarIcon
+        key={i}
         className={cn(styles.star, {
           [styles.filled]: i < currentRaiting,
           [styles.editable]: isEditable
         })}
-        key={i}
         onMouseEnter={() => changeDisplay(i + 1)}
         onMouseLeave={() => changeDisplay(rating)}
         onClick={() => onClicked(i + 1)}
@@ -46,7 +46,7 @@ export const Raiting = ({isEditable = false, rating, setRating, ...props}: Ratin
   }
   return (
     <div {...props}>
-      {raitingArray.map(r => (r))}
+      {raitingArray.map((r, i) => (<span key={i}>{r}</span>))}
     </div>
   )
 }

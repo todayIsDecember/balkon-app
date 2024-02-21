@@ -1,12 +1,46 @@
 .container {
   color: var(--grey);
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-areas:
+  "title title"
+  "locationIcon location"
+  "contactsIcon contacts"
+  "description description";
+  gap: 5px 20px;
+  font-size: 12px;
+  align-items: center;
 }
 
 .title {
+  grid-area: title;
   font-size: 24px;
   text-align: center;
 }
 
 .location {
+  grid-area: location;
   font-size: 12px;
 }
+
+.locationIcon {
+  grid-area: locationIcon;
+}
+
+.contacts {
+  grid-area: contacts;
+}
+
+.contactsIcon {
+  grid-area: contactsIcon;
+}
+
+.description {
+  grid-area: description;
+  border-left: 5px solid var(--grey);
+  font-size: 16px;
+  padding-left: 15px;
+  line-height: 1.5rem;
+  color: var(--white);
+}
+

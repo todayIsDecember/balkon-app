@@ -8,7 +8,6 @@ export const Review =({review, className, ...props}: ReviewProps):JSX.Element =>
     <div {...props} className={cn(className, styles.review)}>
       <div className={styles.created}>{review.created}</div>
       <Raiting rating={review.raiting} className={styles.rating}/>
-      <div className={styles.title}>{review.title}</div>
       <div className={styles.description}>{review.description}</div>
     </div>
   )

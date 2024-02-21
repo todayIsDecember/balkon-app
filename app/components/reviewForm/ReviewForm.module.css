@@ -1,0 +1,34 @@
+.form {
+  padding: 20px;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: var(--grey);
+  margin: 0;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.textarea {
+  justify-self: stretch;
+}
+
+.inputDesc:focus-visible {
+  border: none;
+  outline: 0cm;
+}
+
+.btn {
+  font-size: 12px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--black-light);
+  box-shadow: none;
+}

@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { Review, Wrapper } from "../components"
+import { Review, ReviewForm, Wrapper } from "../components"
 import styles from './page.module.css'
 import { getReviews } from "../api/getReviews"
 import { IReview } from "../interfaces/reviewInterface"
@@ -13,6 +13,7 @@ export default async function Reviews() {
 
   return (
     <Wrapper>
+      <ReviewForm></ReviewForm>
       <div className={styles.reviewsContainer}>
         <div className={styles.title}>
         <div className={styles.avg}>{reviewsData['avg']['_avg']['raiting'].toFixed(1)} із 5</div>

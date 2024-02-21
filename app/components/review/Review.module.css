@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas:
-  "title created"
+  ". created"
   "raiting ."
   "description description";
   gap: 10px;
@@ -20,11 +20,6 @@
   grid-area: created;
   text-align: end;
   justify-self: flex-start;
-}
-.title {
-  grid-area: title;
-  font-size: 12px;
-  color: var(--grey-light);
 }
 
 .raiting {
