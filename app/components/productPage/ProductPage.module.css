@@ -16,6 +16,7 @@
   background-color: var(--black);
   transition: 0.3s ease;
   color: var(--grey);
+  height: 100%;
   margin: 0px 10px;
 }
 
