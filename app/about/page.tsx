@@ -10,13 +10,12 @@ export default async function AboutPage(): Promise<JSX.Element> {
   return (
     <Wrapper>
       <div className={styles.container}>
-        <p className={styles.title}>{about[0].name}</p>
+        <p className={styles.title}>{about.name}</p>
         <LocationIcon className={styles.locationIcon}/>
-        <p className={styles.location}>{about[0].location}</p>
+        <p className={styles.location}>{about.location}</p>
         <PhoneIcon className={styles.contactsIcon}/>
-        <p className={styles.contacts}>{about[0].contacts}</p>
-        <p className={styles.description}>{about[0].description}</p>
-
+        <p className={styles.contacts}>{about.contacts}</p>
+        <p className={styles.description}>{about.description}</p>
       </div>
     </Wrapper>
   )
