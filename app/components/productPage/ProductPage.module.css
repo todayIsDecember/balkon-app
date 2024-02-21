@@ -29,10 +29,7 @@
 
 .desc {
   grid-area: desc;
-  font-size: 18px;
-  border-bottom: 1px dashed var(--primary);
-  padding-bottom: 20px;
-  /* text-align: center; */
+  font-size: 16px;
 }
 
 .priceIcon {
@@ -41,7 +38,7 @@
 
 .price {
   grid-area: price;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .weightIcon {
@@ -51,7 +48,7 @@
 
 .weight {
   grid-area: weight;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .conteinerImage {
